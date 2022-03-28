@@ -37,3 +37,126 @@
 .logo {
   margin: 0 auto;
 }
+.footer {
+  &__content {
+    background-color: #dfdfdf;
+    padding: 60px 0 80px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__info {
+    width: 540px;
+  }
+  &__info-title {
+    color: $title;
+    @extend %title-font;
+    margin-bottom: 14px;
+    line-height: 23px;
+    font-size: 16px;
+  }
+  &__info-text {
+    margin-bottom: 16px;
+    max-width: 475px;
+  }
+  &__info-email {
+    font-weight: 600;
+    font-size: 14px;
+    color: $title;
+    margin-bottom: 22px;
+    display: inline-block;
+  }
+  &__form {
+    display: flex;
+  }
+  &__form-input {
+    padding: 6px 10px 6px 16px;
+    border-radius: 21px;
+    background-color: transparent;
+    border: 1px solid rgba($title, 0.7);
+    width: 100%;
+    &::placeholder {
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #a1a1a1;
+    }
+  }
+  &__form-button {
+    background-color: $title;
+    border: none;
+    color: #fffff0;
+    border-radius: 21px;
+    font-weight: 600;
+    padding: 7px 12px;
+    min-width: 160px;
+    margin-left: 9px;
+    cursor: pointer;
+  }
+  &__social {
+    width: 125px;
+    margin-right: auto;
+    margin-left: 99px;
+  }
+  &__social-item,
+  &__menu-item {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 28px;
+  }
+  &__social-link {
+    padding-left: 28px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 3px;
+    }
+  }
+  &__social-link--facebook::before {
+    background-image: url(../images/facebook.svg);
+    width: 16px;
+    height: 16px;
+  }
+  &__social-link--instagram::before {
+    background-image: url(../images/instagram.svg);
+    width: 14px;
+    height: 15px;
+  }
+  &__social-link--pinterest::before {
+    background-image: url(../images/Pinterest.svg);
+    width: 16px;
+    height: 16px;
+    top: 1px;
+  }
+  &__social-link--whatsapp::before {
+    background-image: url(../images/whatsapp.svg);
+    width: 14px;
+    height: 14px;
+  }
+  &__social-link--youtube::before {
+    background-image: url(../images/youtube.svg);
+    width: 18px;
+    height: 12px;
+  }
+  &__social-link,
+  &__menu-link {
+    color: #707070;
+  }
+  &__menu {
+    margin-right: 60px;
+    width: 125px;
+  }
+  &__copyright {
+    background-color: $title;
+    color: #a1a1a1;
+    text-align: center;
+    padding: 42px 0 41px;
+  }
+}
